@@ -1,0 +1,121 @@
+.body-adm {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b2866
+}
+
+.box-adm {
+    width: 1000px;
+    background-color: #0d2f79;
+    border-radius: 15px;
+    box-shadow: #0000003d 1px 1px 10px;
+    padding: 20px;
+}
+
+form {
+    padding: 25px;
+    border: solid #2f4981 2px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-cadastrar, .btn-limpar {
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-cadastrar {
+    color: white;
+    background-color: green;
+}
+
+.btn-cadastrar:hover {
+    color: green;
+    background-color: white;
+}
+
+.btn-limpar {
+    color: white;
+    background-color: #880f0f;
+}
+
+.btn-limpar:hover {
+    color: #880f0f;
+    background-color: white;
+}
+
+.btn-atualizar {
+    width: auto;
+    margin: 20px;
+    color: white;
+    background-color: #770b81;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-atualizar:hover{
+    color: #770b81;
+    background-color: white;
+}
+
+table {
+    margin: 20px;
+    width: 600px;
+}
+
+table, th, tr {
+    border: solid white 3px;
+}
+
+td, th {
+    padding: 8px;
+    padding-right: 20px;
+    border: solid white 2px;
+}
+
+.box-tabela {
+    border-radius: 5px;
+    border: solid #2f4981 2px;
+}
+
+.btn-excluir, .btn-editar {
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-excluir {
+    color: white;
+    background-color: #414141;
+}
+
+.btn-excluir:hover {
+    color: #414141;
+    background-color: white;
+}
+
+.btn-editar {
+    color: white;
+    background-color: #b95a0b;
+}
+
+.btn-editar:hover {
+    color: #b95a0b;
+    background-color: white;
+}
+

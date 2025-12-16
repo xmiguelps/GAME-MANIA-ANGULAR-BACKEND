@@ -1,0 +1,47 @@
+<div class="body-adm p-0 m-0">
+    <main class="d-flex justify-content-center align-items-center w-100 h-100">
+        <section class="box-adm d-flex flex-column align-items-center">
+            <h1>Seção de Administração de Usuario</h1>
+            <form (ngSubmit)="salvarUsuario()" #form="ngForm" class="d-flex align-items-center mt-3 w-50">
+                <div class="d-flex flex-column w-100">
+                    <div>
+                        <label for="nome"><img src="assets/imgs/icons/login.png" alt="icone de login"></label>
+                        <input class="p-2 ps-2 m-2 w-75" type="text" [(ngModel)]="nome" name="nome" id="nome" placeholder="Nome de usuario" >
+                    </div>
+                    <div>
+                        <label for="senha"><img src="assets/imgs/icons/senha.png" alt="icone de senha"></label>
+                        <input class="p-2 ps-2 m-2 w-75" type="password" [(ngModel)]="senha" name="senha" id="senha" placeholder="Senha" >
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-cadastrar ">Cadastrar</button>
+                        <button type="button" class="btn-limpar" (click)="limparLista()" >Limpar</button>
+                        <button type="button" class="btn-editar" (click)="salvarEdicao()" [disabled]="!idEditando">Salvar edição</button>
+                    </div>
+                </div>
+            </form>
+            <div class="box-tabela d-flex flex-column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Senha</th>
+                            <th>id</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of usuarios" >
+                            <td>{{ user.usuario }}</td>
+                            <td>{{ user.senha }}</td>
+                            <td>{{ user.id }}</td>
+                            <td> 
+                                <button type="button" class="btn-editar" (click)="iniciarEdicao(user)">Editar</button>
+                                <button type="button" class="btn-excluir" (click)="excluirUsuario(user.id!)">Excluir</button> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>

@@ -1,0 +1,161 @@
+    <app-header (searchEvent)="filtrar($event)" ></app-header>
+    <main>
+        <section> <!--Banners aqui-->
+            <div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/imgs/banners/banner-1.jpg" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/banners/banner-2.jpg" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/banners/banner-3.webp" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/imgs/banners/banner-4.jpg" class="d-block w-100" alt="banner de destaques">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex flex-column"> <!--Destaques aqui-->
+            <h2 class="title-galerias">
+                <img src="assets/imgs/icons/destaques.png" alt="icone de novidades"> Destaques <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
+            </h2>
+            <p class="text-galerias">Veja aqui os produtos mais vendidos em nossa loja:</p>
+            <div class="d-flex justify-content-center">
+                <article class="box-galeria-destaques mt-4 me-3 mb-0 ms-3 d-flex justify-content-evenly flex-wrap w-auto container-fluid">
+                    <div class="box-products">
+                        <h3 class="title-products">Notebook Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/notebook-gamer.png" alt="notebook gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$7.599</p>
+                            <div>
+                                <input class="comprar" id="comprar1" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-products">
+                        <h3 class="title-products">Monitor Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/monitor-gamer.png" alt="monitor gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$966,99</p>
+                            <div>
+                                <input class="comprar" id="comprar2" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-products">
+                        <h3 class="title-products">RTX 5070</h3>
+                        <img class="products" src="assets/imgs/destaques/rtx5070.png" alt="placa de video rtx 5070">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$5.400</p>
+                            <div>
+                                <input class="comprar" id="comprar3" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-products">
+                        <h3 class="title-products">Gabinet Gamer</h3>
+                        <img class="products" src="assets/imgs/destaques/gabinet-gamer.png" alt="gabinet gamer">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$759,99</p>
+                            <div>
+                                <input class="comprar" id="comprar4" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-products">
+                        <h3 class="title-products">Galaxy S24</h3>
+                        <img class="products" src="assets/imgs/destaques/galaxy-s24.png" alt="celular galaxy s24">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$5000</p>
+                            <div>
+                                <input class="comprar" id="comprar5" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" data-alt="assets/imgs/icons/favorite-button-hover.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-products">
+                        <h3 class="title-products">PC Gamer Completo</h3>
+                        <img class="products" src="assets/imgs/destaques/pc-gamer.png" alt="Computador gamer completo">
+                        <br>
+                        <div class="box-text-products">
+                            <p class="price">R$7599</p>
+                            <div>
+                                <input class="comprar" id="comprar6" type="button" value="Comprar">
+                                <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section> <!--Novidades aqui-->
+            <h2 class="title-galerias">
+                <img src="assets/imgs/icons/novidades.png" alt="icone de novidades"> Novidades <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
+            </h2>
+            <p class="text-galerias">Veja aqui os produtos recentementes adicionados á nossa loja:</p>
+            <article class="box-novidades flex-wrap justify-content-center align-items-center d-flex container-fluid">
+                <img class="d-block banner-novidades" src="assets/imgs/banners/banner-novidades-1.jpg" alt="banner de novidades">
+                <img class="d-block banner-novidades" src="assets/imgs/banners/banner-novidades-2.jpg" alt="banner de novidades">
+                <img class="d-block banner-novidades" src="assets/imgs/banners/banner-novidades-3.jpg" alt="banner de novdidades">
+            </article>
+        </section>
+        <section> <!--Galerias aqui-->
+            <div class="d-flex flex-column">
+                <h2 class="title-galerias">
+                    <img src="assets/imgs/icons/products.png" alt="icone de novidades"> Galeria de produtos <img src="assets/imgs/icons/seta-direita.png" alt="seta para direita">
+                </h2>
+                <p class="text-galerias">Veja aqui diversos produtos que a Game Mania pode te oferecer:</p>
+                <div class="d-flex justify-content-center">
+                    <article class="box-galeria container-fluid" *ngFor="let galeria of galerias">
+                        <div
+                            class="box-products"
+                            *ngFor="let p of galeria.produtos"
+                            [style.visibility]="p.visible ? 'visible' : 'hidden'"
+                            [style.position]="p.visible ? 'static' : 'absolute'"
+                        >
+                            <h3 class="title-products">{{ p.title }}</h3>
+                            <img class="products" [src]="p.img" alt="{{ p.title }}">
+                            <br>
+                            <div class="box-text-products">
+                                <p class="price">{{ p.price }}</p>
+                                <div>
+                                    <input class="comprar" id="comprar7" type="button" value="Comprar">
+                                    <label class="box-comprar-button" for="comprar"><img class="comprar-button" src="assets/imgs/icons/comprar-button.png" alt="botão de comprar"></label>
+                                    <button class="favoriter-button"><img class="favorite-icon" src="assets/imgs/icons/favorite-button.png" alt="botão de favoritar"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <app-footer></app-footer>

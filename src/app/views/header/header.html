@@ -1,0 +1,46 @@
+    <header class="d-flex align-items-center justify-content-between">
+        <div class="m-3">
+            <a routerLink="/"><img src="assets/imgs/icons/logo-loja.png" alt="logo-loja"></a>
+        </div>
+        <menu class="ps-0 w-100"> <!-- Menu aqui -->
+            <nav class="navbar navbar-expand-lg navbar-dark me-2 mt-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex justify-content-evenly collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="box-search-and-buttons d-flex align-items-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                             <li class="nav-item align-items-center">
+                                <a class="login-button d-flex mt-1 nav-link active" aria-current="page" routerLink="/login" rel="nofollow" target="_self"><img src="assets/imgs/icons/login.png" alt="login icon"><p class="p-1 m-0 pt-2">Login</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="favorite-button d-flex mt-2 me-1 nav-link active" aria-current="page" routerLink="/favorites" rel="nofollow" target="_self"><img src="assets/imgs/icons/heart.png" alt="favorites icon"><p class="p-0 m-0 ms-1 pt-1">Favoritos</p></a>
+                            </li>
+                            <li class="box-carrinho ps-1 nav-item">
+                                <a class="carrinho nav-link" routerLink="/carrinho" rel="nofollow" target="_self">
+                                    <div class="box-icon-img-carrinho d-flex">
+                                        <div class="box-icon-carrinho">
+                                            <img class="icon-carrinho" src="assets/imgs/icons/carrinho.png" alt="carrinho">
+                                        </div>
+                                        <div class="box-text-carrinho d-flex flex-column justify-content-center">
+                                            <p class="p-0 m-0 text-carrinho">carrinho</p>
+                                            <p class="p-0 m-0 text-carrinho"><span class="numero-produtos">0</span> produtos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="d-flex box-search" (submit)="filtrar(); $event.preventDefault()">
+                            <input class="form-control me-2 search" type="search" [(ngModel)]="searchTerm" [ngModelOptions]="{standalone: true}" placeholder="Search" aria-label="Search">
+                            <button class="search-button btn btn-outline-success" (click)="filtrar()" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <ul class="box-contact navbar-nav mb-2 mb-lg-0" >
+                        <li class="nav-item">
+                            <a class="nav-link box-contact-text" routerLink="/contatos" rel="nofollow" target="_self"> <img src="assets/imgs/icons/phone.png" alt="icone de telefone"> Nos-Contate </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </menu>
+    </header>

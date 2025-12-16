@@ -1,0 +1,53 @@
+footer {
+    background-color: #3a3d42;
+}
+
+.box-text-rodape {
+    width: 300px;
+    margin: 0px 15px;
+}
+
+.icons-rodape {
+    width: 30px;
+    height: 30px;
+}
+
+.text-rodape {
+    text-align: justify;
+}
+
+.box-patrocinadores {
+    width: 430px;
+}
+
+.box-imgs-patrocinadores {
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.box-final-rodape {
+    background-color: #303236;
+}
+
+.logo-rodape {
+    width: 50px;
+    height: 50px;
+}
+
+.copyright {
+    text-align: justify;
+    font-size: small;
+}
+
+.twitter:hover {
+    content: url(/assets/imgs/icons/twitter-logo-hover.png);
+}
+
+.instagram:hover {
+    content: url(/assets/imgs/icons/instagram-logo-hover.png);
+}
+
+.facebook:hover {
+    content: url(/assets/imgs/icons/facebook-logo-hover.png);
+}
