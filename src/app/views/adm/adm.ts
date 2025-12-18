@@ -41,6 +41,7 @@ export class Adm implements OnInit {
       error: err => console.error('ERRO:', err)
     });
   window.location.reload();
+  alert("Usuario Cadastrado com sucesso")
   }
 
   //Carregar Lista
@@ -51,6 +52,7 @@ export class Adm implements OnInit {
     },
     error: (err: any) => {
       console.error('Erro ao listar:', err);
+      alert('Erro ao Atualizar lista')
     }
   });
   }
@@ -66,8 +68,12 @@ export class Adm implements OnInit {
     next: () => {
       window.location.reload();
     },
-    error: err => console.error(err)
+    error: (err: any) => {
+      console.error('Erro ao limpar Lista', err);
+      alert('Erro ao limpar lista')
+    }
   });
+  alert('Lista de usuarios limpa!')
   }
 
   //Excluir Usuario
@@ -81,6 +87,7 @@ export class Adm implements OnInit {
     },
     error: (err: any) => {
       console.error('Erro ao excluir usuário:', err);
+      alert('Erro ao excluir usuario')
     }
   });
   }
@@ -115,7 +122,10 @@ export class Adm implements OnInit {
         }
       }
     },
-    error: (err) => console.error(err)
+    error: (err) => {
+      console.error(err);
+      alert('Erro ao editar Usuario')
+    }
   });
   }
 }
